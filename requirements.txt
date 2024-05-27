@@ -1,0 +1,7 @@
+joblib==1.2.0
+librosa==0.10.1
+numpy==1.23.5
+pydub==0.25.1
+soundfile==0.12.1
+streamlit==1.25.0
+tensorflow==2.12.0
