@@ -54,8 +54,11 @@ def client_page():
             audio = AudioSegment.from_mp3(BytesIO(st.session_state['audio_bytes']))
             audio.export("temp.wav", format="wav")
             file_path = "temp.wav"
+            print(file_path)
+            
         else:
             file_path = uploaded_file.name
+            print(file_path)
 
         features = audio_processing.get_features(file_path)
         st.session_state['emotion'] = predict_emotion(features)
